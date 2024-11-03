@@ -1,0 +1,94 @@
+*{
+  box-sizing: border-box;
+}
+  body{
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+  background: #131200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.calculator{
+  width: 300px;
+  height: 540px;
+  margin: auto;
+  border-radius: 10px;
+  background: #2c3f50;
+  padding: 10px;
+  box-shadow: 4px 4px 30px rgba(52, 73, 94,0.3);
+  overflow: hidden;
+  border-bottom: 2px solid yellowgreen;
+}
+
+input, .clock{
+  border-radius: 12px;
+  background: #34495e;
+  color: #fff;
+}
+
+.clock{
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 5px 0px 180px;
+  background: #131200;
+}
+
+.clock p{
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Segoe UI',Gsans-serif; 
+  color: greenyellow;
+}
+
+form input{
+  width: 100%;
+  height: 100px;
+  padding: 0.5rem;
+  text-align: right;
+  border: none;
+  margin: 8px 0;
+  font-size: 2rem;
+}
+
+input:hover{
+  box-shadow: 0 20px 50px rgba(0, 5, 24, 0.24) xset;
+  border-bottom: 2px solid rgba(153, 205, 50, 0.628);
+}
+
+.buttons{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+padding: 8px;
+}
+
+button{
+  margin: 5px 0px;
+  width: 60px;
+  height: 54px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+}
+
+button:hover{
+  box-shadow: 0 8px 25px #000d2a;
+}
+
+.equal{
+  flex-grow: 0.8;
+  background: rgba(188, 239, 84, 0.685);
+}
+
+.delet{
+  background: rgb(200, 45, 45);
+}

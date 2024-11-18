@@ -35,7 +35,7 @@ reset.addEventListener("click", () => {
 });
 
  
-function mytimeFunction(hour,minute,second){
+function myTimeFunction(hour,minute,second){
 
  let hours = new Date().getHours();
  let seconds = new Date().getSeconds();
@@ -47,8 +47,8 @@ function mytimeFunction(hour,minute,second){
 document.getElementById("hour").innerHTML = `${hours}:`;
 document.getElementById("minute").innerHTML = `${minutes}:`;
 document.getElementById("second").innerHTML = seconds + " " +amPm;
-return setInterval(timeFunction,1000);
+return setInterval(myTimeFunction,1000);
  
 }
 
-mytimeFunction();
+myTimeFunction();

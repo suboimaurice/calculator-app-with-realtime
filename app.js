@@ -40,7 +40,7 @@ function myTimeFunction(hour,minute,second){
  let hours = new Date().getHours();
  let seconds = new Date().getSeconds();
  let minutes = new Date().getMinutes();
- let amPm = hours >= 12 ? "PM": 'AM';
+ let amPm = hours >= 12 ? 'PM': 'AM';
  if (minutes <=9){
   minutes =`'0' + ${minutes}` ;
  }
